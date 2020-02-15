@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
 A module for adding shebang and encoding to python files
 """
@@ -47,4 +45,4 @@ if NEEDED:
             LINES.insert(0, f"{SHEBANG}")
             f.seek(0)
             f.writelines(LINES)
-            print("Shebang inserted into {file}")
+            print(f"Shebang inserted into {file}")
