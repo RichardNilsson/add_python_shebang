@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 A module for adding shebang and encoding to python files
 """
@@ -29,12 +31,7 @@ for file in RESULT:
         else:
             print(f"Shebang and encoding not present in {file}.")
             NEEDED = "shebang and encoding"
-
-if not RESULT:
-    print("You did not choose a file.")
-
-if NEEDED:
-    for file in RESULT:
+    if NEEDED:
         with open(file=file, mode="r+") as f:
             if NEEDED == "encoding":
                 LINES = f.readlines()
@@ -46,3 +43,6 @@ if NEEDED:
             f.seek(0)
             f.writelines(LINES)
             print(f"Shebang inserted into {file}")
+
+if not RESULT:
+    print("You did not choose a file.")
