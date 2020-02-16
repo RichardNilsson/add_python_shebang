@@ -63,7 +63,7 @@ To use add shebang to python files, follow these steps:
 
 Your python files will now be checked for shebang and if it's not present it will be added.
 
-[![asciicast](https://asciinema.org/a/ECSFeaqLeLtdnRovJbDyDXuCV.svg)](https://asciinema.org/a/ECSFeaqLeLtdnRovJbDyDXuCV)
+[![asciicast](https://asciinema.org/a/113463.png)](https://asciinema.org/a/ECSFeaqLeLtdnRovJbDyDXuCV)
 
 <!-- ```bash
 <usage_example>
